@@ -45,7 +45,7 @@ class Conv(nn.Module):
         default_act (nn.Module): Default activation function (SiLU).
     """
 
-    default_act = nn.LeakyReLU(0.1)  # changed default activation to Leaky ReLU
+    default_act = nn.Tanh()  # changed default activation from LeakyReLU to Tanh
 
 
     def __init__(self, c1, c2, k=1, s=1, p=None, g=1, d=1, act=True):
